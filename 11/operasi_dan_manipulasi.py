@@ -54,3 +54,56 @@ data = "huruf kecil"
 jumlah = data.count("u")
 print("jumlah huruf u pada " + data + " adalah " + str(jumlah))
 
+## merubah case dari string
+
+# merubah ke upper case
+salam = "halo"
+print("halo -> " + salam.upper())
+
+# merubah ke lower case
+bro = "BRO"
+print("BRO -> " + bro.lower())
+
+## pengecekan dengan isX method
+
+# contoh pengecekan lower case
+salam = "halo"
+apakahLower = salam.islower() # hasilnya boolean
+print("apakah " + salam + " lower case? : " + str(apakahLower))
+apakahUpper = salam.isupper() # hasilnya boolean
+print("apakah " + salam + " upper case? : " + str(apakahUpper))
+
+# isalpha() -> mengembalikan true jika string hanya terdiri dari huruf
+# isnumeric() -> mengembalikan true jika string hanya terdiri dari angka
+# isdecimal() -> mengembalikan true jika string hanya terdiri dari angka dan tanda desimal
+# isspace() -> mengembalikan true jika string hanya terdiri dari spasi, tab, atau newline
+# istitle() -> mengembalikan true jika string berupa judul, yaitu setiap kata dimulai dengan huruf kapital
+
+## mengecek komponen startswith() dan endswith()
+cek_start = "belajar python"
+cek_akhir = "python"
+print(cek_start.startswith("belajar"))
+print(cek_akhir.endswith("python"))
+
+## penggabungan komponen join() dan split()
+data = ["belajar", "python", "di", "dunia ilkom"]
+gabung = " ".join(data)
+print(gabung)
+pecah = gabung.split(" ")
+print(pecah)
+
+# alokasi karakter rjust(), ljust(), dan center()
+kata = "halo"
+print("kata : " + kata)
+print("rjust : " + kata.rjust(10))
+print("ljust : " + kata.ljust(10))
+print("center : " + kata.center(10))
+
+print()
+# kebalikan dari strip() adalah rstrip() dan lstrip()
+kata = "  halo  "
+print("kata : " + kata)
+print("strip : " + kata.strip())
+print("rstrip : " + kata.rstrip())
+print("lstrip : " + kata.lstrip())
+
