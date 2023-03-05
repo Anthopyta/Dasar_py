@@ -1,0 +1,56 @@
+# operasi dan manipulasi pada string
+
+# 1. penambahan string
+namaDepan = "John"
+namaBelakang = "Doe"
+nama = namaDepan + " " + namaBelakang
+print(nama)
+
+# menghitung panjang string
+panjang = len(nama)
+print(panjang)
+
+# operator untuk string
+
+# untuk mengecek apakah ada komponen char atau string di dalam string
+
+d = "d" 
+status = d in nama
+print("Status " + d + " ada di " + nama + " = " + str(status))
+
+d = "D" 
+status = d in nama
+print("Status " + d + " ada di " + nama + " = " + str(status))
+
+d = "d" 
+status = d not in nama
+print("Status " + d + " tidak ada di " + nama + " = " + str(status))
+
+# menghitung string
+print("hwhwh"*5)
+print(5*"hwhwh")
+
+# indexing
+print("index ke-0 : " + nama[0])
+print("index ke-6 : " + nama[6])
+print("index ke-(-1) : " + nama[-1])
+print("index ke-(-2) : " + nama[-2])
+print("index ke-[0:4] : " + nama[0:4])
+print("index ke-[0:4:2] : " + nama[0:4:2])
+
+# item paling kecil 
+print("paling kecil : " + min(nama))
+# item paling besar
+print("paling besar : " + max(nama))
+
+asscii_coed = ord(" ")
+print("ASCII code untuk spasi adalah " + str(asscii_coed))
+data = 117
+print("char untuk ASCII code 117 adalah " + chr(data))
+
+# operator dalam bentuk method
+
+data = "huruf kecil"
+jumlah = data.count("u")
+print("jumlah huruf u pada " + data + " adalah " + str(jumlah))
+
