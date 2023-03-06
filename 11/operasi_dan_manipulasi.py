@@ -97,7 +97,7 @@ kata = "halo"
 print("kata : " + kata)
 print("rjust : " + kata.rjust(10))
 print("ljust : " + kata.ljust(10))
-print("center : " + kata.center(10))
+print("center : " + kata.center(10, '='))
 
 print()
 # kebalikan dari strip() adalah rstrip() dan lstrip()
