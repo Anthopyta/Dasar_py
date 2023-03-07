@@ -1,9 +1,24 @@
 # pernyataan continue
-
+# menggunakan for
 for i in range(1, 11):
     if i % 2 == 0:
         continue
     print(i)
+
+    
+print("=====================================")
+# menggunakan while
+angka = 0
+print(f"agnaka sekarang -> {angka}")
+
+while angka < 5:
+  angka += 1
+  print(f"angka sekarang -> {angka}") # aksi 1
+  
+  if angka == 3:
+    print("Check!!")
+    continue # akan membuat loop meloncat ke step selanjutnya
+  print("Pass") # aksi 2
 
 """ 
 Contoh di atas akan mencetak angka dari 1 hingga 10, 
@@ -38,6 +53,18 @@ for fruit in fruits:
     if fruit == "banana":
         break
     print(fruit)
+
+print("=====================================")
+angka = 0
+
+while angka < 5:
+  angka += 1
+  print(f"angka sekarang -> {angka}")
+  
+  if angka == 3:
+    print("break")
+    break
+  print("Check!!")
 
 """ 
 Contoh di atas menunjukkan penggunaan pernyataan break pada pernyataan perulangan for.
