@@ -12,7 +12,7 @@ Hal ini dilakukan dengan menggunakan pernyataan continue. Ketika program menemuk
 maka pernyataan continue akan dilewati, dan program akan melanjutkan ke iterasi berikutnya tanpa mencetak angka tersebut.
 
 """
-
+print("=====================================")
 # pernyataan pass
 
 for i in range(1, 6):
@@ -30,6 +30,7 @@ memudahkan proses debugging ketika terjadi kesalahan.
 
 """
 
+print("=====================================")
 # pernyataan break
 
 fruits = ["apple", "banana", "cherry"]
