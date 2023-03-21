@@ -1,0 +1,1 @@
+data = "ini berasal dari file variable"
